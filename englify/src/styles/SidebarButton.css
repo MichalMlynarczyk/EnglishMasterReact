@@ -1,0 +1,68 @@
+.sidebarbutton-ctn{
+  display: flex;  
+    align-items: center; 
+    padding-left: 20px;
+    padding: 5px;
+    text-align: left;
+    cursor: pointer;
+    transition:  0.2s ease;
+    width: 80%;
+    height: 35px;
+    border-radius: 12px;
+    margin-top: 20px;
+
+}
+
+.sidebarbutton-ctn.active {
+  background: linear-gradient(90deg, #673fe913 ,   #3fa9f536); 
+}
+.sidebarbutton-ctn:active {
+  background: linear-gradient(90deg, #673fe913 ,   #3fa9f536); 
+}
+
+.sidebarbutton-ctn span{
+    padding-left: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+.sidebarbutton-ctn:not(.active):hover {
+  background: linear-gradient(90deg,#3fa9f50e , #673fe913);
+
+}
+
+.icon svg:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+
+}
+
+.icon{
+    padding-left: 20px;
+}
+
+
+
+.icon svg {
+  color: #333;
+  width: 20px;
+}
+
+.sidebarbutton-ctn:hover .icon svg {
+  color: rgba(112, 45, 218);       
+}
+
+.sidebarbutton-ctn:hover span {
+  color: rgba(112, 45, 218);       
+}
+
+.sidebarbutton-ctn.active .icon svg {
+  color: rgba(112, 45, 218);       
+}
+
+.sidebarbutton-ctn.active span {
+  color: rgba(112, 45, 218);       
+}
+
+
+
+

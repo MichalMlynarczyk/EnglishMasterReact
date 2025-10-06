@@ -1,0 +1,18 @@
+.history-cnt {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #3fa9f527, #cba4f013);
+    text-align: left;
+    padding: 40px;
+}
+
+.history-title {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.history-descr {
+    font-size: 20px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.712);
+}

@@ -1,0 +1,168 @@
+.exercise-page-container {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, #3fa9f527, #cba4f013);
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.return-button {
+    text-align: left;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.return-button svg {
+    width: 18px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.headline-exercise-page-one {
+    text-align: left;
+    font-size: 30px;
+    padding-top: 20px;
+    font-weight: 600;
+}
+
+.level-exercise-page {
+    text-align: left;
+
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.548);
+}
+
+.text-ctn {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+
+.level-exercise-page span {
+    color: rgba(128, 0, 128, 0.658);
+    padding-left: 5px;
+    font-weight: 700;
+}
+
+.test-form-text svg {
+    color: rgba(128, 0, 128, 0.658);
+}
+
+.test-form {
+    width: 60%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.76);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(239, 238, 255);
+}
+
+.test-form-text {
+    font-weight: 700;
+    font-size: 20px;
+    align-items: left;
+    text-align: left;
+}
+
+.text-ctn {
+    padding-top: 40px;
+}
+
+.check-button svg {
+    width: 20px;
+    margin-right: 20px;
+}
+
+.check-button {
+    cursor: not-allowed;
+    pointer-events: none;
+    padding: 10px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(135deg, rgba(91, 180, 91, 0.356), rgba(23, 151, 29, 0.445));
+}
+
+.check-button.active {
+    cursor: pointer;
+    pointer-events: auto;
+    background: linear-gradient(135deg, rgb(109, 218, 109), rgba(23, 151, 29, 0.753));
+}
+
+.inf-ctn {
+    background-color: rgba(255, 255, 255, 0.76);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(239, 238, 255);
+    text-align: left;
+    margin-right: 40px;
+}
+
+.inf-title {
+    font-weight: 600;
+    margin-bottom: 20px;
+
+
+
+}
+
+.tip-cnt {
+    padding-top: 15px;
+
+    font-size: 15px;
+    font-weight: 200;
+
+    color: rgba(0, 0, 0, 0.904);
+}
+
+.inf-ctn {
+    align-items: left;
+}
+
+.tip-cnt svg {
+    color: purple;
+    width: 15px;
+}
+
+@media (max-width: 1100px) {
+    .text-ctn {
+        display: block;
+        gap: 0px;
+    }
+
+    .test-form {
+
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .exercise-page-container {
+        padding-right: 40px;
+    }
+
+    .inf-ctn {
+        width: 100%;
+    }
+
+
+
+}
+
+
+.right-panel-cnt {
+    text-align: left;
+    max-width: 40%;
+}
+
+.check-button.noactive {
+    cursor: not-allowed;
+    pointer-events: none;
+    padding: 10px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(135deg, rgba(91, 180, 91, 0.356), rgba(23, 151, 29, 0.445));
+}

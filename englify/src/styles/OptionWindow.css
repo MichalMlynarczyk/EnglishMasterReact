@@ -1,0 +1,113 @@
+.option-window-ctn {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  background: linear-gradient(90deg, #3fa9f527, #cba4f013);
+}
+
+.desc-one {
+  padding: 5px 15px;
+  display: inline-block;
+  margin-top: 50px;
+  background: linear-gradient(90deg, #d4b9ec4d, #d2aef538);
+  font-weight: 500;
+  border-radius: 12px;
+  color: rgb(151, 33, 151);
+
+}
+
+.desc-one svg {
+  width: 18px;
+  margin-right: 10px;
+}
+
+.card-ctn-app {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  /* 2 kolumny o równej szerokości */
+  grid-auto-rows: auto;
+  /* wysokość dopasowana do zawartości */
+  gap: 20px;
+  /* odstęp między elementami */
+  justify-content: center;
+  /* opcjonalnie: wyśrodkowanie całego gridu */
+}
+
+.start-btn {
+  background: linear-gradient(135deg, #673fe9de, #7542b8d7);
+  background: linear-gradient(135deg, #673fe983, #7542b894);
+  display: inline-block;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 40px;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.start-btn svg {
+  margin-left: 20px;
+}
+
+.start-btn:hover {
+  background: linear-gradient(135deg, #673fe9, #7542b8);
+}
+
+
+.start-btn.active {
+  background: linear-gradient(135deg, #673fe9de, #7542b8d7);
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.title-one {
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.title-two {
+  font-size: 25px;
+  color: #58595a;
+}
+
+@media (max-width: 1150px) {
+  .card-ctn-app {
+    grid-template-columns: repeat(2, max-content);
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .card-ctn-app {
+    grid-template-columns: repeat(1, max-content);
+  }
+
+  .desc-one {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+
+  .title-one {
+    font-size: 30px;
+  }
+
+  .title-two {
+    font-size: 18px;
+  }
+
+  .start-btn svg {
+    margin-left: 10px;
+    width: 20px;
+  }
+
+  .start-btn {
+    font-size: 15px;
+    padding: 8px 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

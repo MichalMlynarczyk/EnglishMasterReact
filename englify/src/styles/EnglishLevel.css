@@ -1,0 +1,59 @@
+.cart-logo{
+    background-color: rgba(228, 227, 227, 0.438);
+    font-size: 21px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.74);
+    padding: 7px 15px;
+    border-radius: 20px;
+}
+
+.cart-cnt{
+    cursor: pointer;
+    max-width: 280px;
+  display: flex;
+  flex-direction: column; /* główny układ pionowy */
+  gap: 5px;               /* odstęp między wierszami */
+  padding: 10px;
+  border: 2px solid #cccccc4d;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.534);
+  transition:  0.4s ease;
+}
+
+.cart-cnt:hover{
+    border-color: #cccccc8e;
+    transform: scale(1.05);
+
+}
+
+.cart-top {
+justify-content: space-between;
+  display: flex;          /* ułożenie poziome dla logo + check */
+  align-items: center;    /* pionowe wyrównanie */
+  gap: 10px;              /* odstęp między logo a check */
+  padding-bottom: 10px;
+}
+
+.cart-top svg{
+    color: blueviolet;
+    opacity: 0;
+}
+
+.cart-top.active svg{
+    opacity: 1;
+    color: var(--active-color, blueviolet);
+}
+
+
+.cart-descr{
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.cart-cnt.active {
+  border-color: var(--active-color, blueviolet);
+}
+
+.cart-logo.active{
+    background-color: var(--active-color, #954fce);
+    color: white;
+}

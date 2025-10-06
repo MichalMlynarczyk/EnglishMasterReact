@@ -1,0 +1,33 @@
+.haze-ctn{
+    padding: 10px;
+    background-color: rgba(107, 188, 255, 0.205);
+    border: 2px solid rgba(107, 188, 255, 0.671);
+    border-radius: 12px;
+  display: flex;
+  align-items: left; /* wyśrodkowanie pionowe */
+  gap: 12px; /* odstęp między elementami */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.number{
+    background-color: rgba(8, 125, 221, 0.842);
+    padding: 3px 10px;
+    border-radius: 50%;
+    color: aliceblue;
+    font-weight: 800;
+}
+
+.haze-in{
+    text-align: left;
+}
+
+.haze-title{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(8, 125, 221, 0.884);
+}
+
+.haze-descr{
+    font-weight: 500;
+}

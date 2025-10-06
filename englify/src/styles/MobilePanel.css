@@ -1,0 +1,26 @@
+.mobile-panel{
+ background-color: rgba(218, 216, 216, 0.137);
+
+    border-bottom: 1px solid rgba(239, 238, 255);
+    text-align: left;
+    color: rgba(0, 0, 0, 0.808);
+}
+
+.mobile-panel svg{
+    width: 20px;
+
+    margin: 20px;
+    cursor: pointer;
+}
+
+.mobile-panel:hover svg{
+    background-color: rgba(0, 0, 0, 0.041);
+}
+
+
+.mobile-panel-title{
+    padding-top: 20px;
+    font-size: 18px;
+ font-weight: 700;
+}
+

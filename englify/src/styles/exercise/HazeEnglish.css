@@ -1,0 +1,62 @@
+.haze-eng-title{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(149, 40, 221, 0.637);
+    padding-bottom: 10px;
+}
+
+.haze-eng-cnt{
+    padding: 10px;
+    background-color: rgba(154, 90, 214, 0.014);
+    border: 2px solid rgba(149, 40, 221, 0.493);
+    border-radius: 12px;
+
+  align-items: left; /* wyśrodkowanie pionowe */
+  gap: 12px; /* odstęp między elementami */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.input-wrapper::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border: 2px solid #000000af;
+  border-radius: 16px;
+  opacity: 0;
+  transform: scale(1);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-wrapper:focus-within::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.input-window {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  background: #f7f3ff;
+  border: 2px solid #b69eff;
+  border-radius: 12px;
+  resize: none;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.25s ease;
+}
+
+.input-window:focus {
+  border-color: #7e57ff;
+}

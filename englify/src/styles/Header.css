@@ -1,0 +1,9 @@
+.header{
+    background-color: rgb(230, 229, 229);
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}

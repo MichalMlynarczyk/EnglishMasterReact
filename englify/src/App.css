@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+  display: flex;
+}
+
+@media (max-width: 580px) {
+  .App{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.loading-page {
+  position: fixed; /* na całej stronie */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8); /* lekko przyciemnione tło */
+  display: flex;
+  flex-direction: column; /* spinner nad tekstem */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* na wierzchu */
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(0,0,0,0.1);
+  border-top-color: #673fe9; /* kolor kółka */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px; /* odstęp od napisu */
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-page span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
